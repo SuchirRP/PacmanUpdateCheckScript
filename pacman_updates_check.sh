@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if $(checkupdates); then
-    notify-send 'Hello world!' 'This is an example notification.' --icon=dialog-information
+    notify-send 'New pacman updates, pls update'--icon=dialog-information
 else
-    echo 'No pacman Updates'
+    notify-send 'No pacman updates' --icon=dialog-information
 fi
